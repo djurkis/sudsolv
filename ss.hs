@@ -3,7 +3,7 @@ import Data.Array
 import Control.Monad
 import Data.Maybe
 import System.Environment
-
+import System.IO
 
 
 type Square = (Char,Char)
@@ -159,7 +159,7 @@ by9 l = (concat h):by9 rest
 
 run :: String -> IO ()
 run x = do
-   contents <- readFile x
+   contents <- readIn x
    let ss = lines contents
        fs = by9 $ filter ('G' `notElem`) ss
        solved = map solve fs
@@ -167,10 +167,15 @@ run x = do
    mapM_ (\(x,y) -> printgrid x y) gridnums
 
 
+readIn::String -> IO String
+readIn "stdin" = getContents
+readIn x = readFile x
+
 
 run_main :: [String] -> IO ()
 run_main x = case x of
              ["-f",path] -> run path
+             ["-i"] -> run "stdin"
              _ -> putStrLn "Usage: sud -f path"
 
 
