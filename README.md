@@ -4,12 +4,12 @@ Solves a solvable sudoku or identifies an unsolvable one.
 Implemenets constraint propagation, until possible, then searches with a guess that has the least options.
 
 Run without compilation:
-USAGE: `runhaskell ss.hs -f path_to_file`
+USAGE: ```unhaskell ss.hs -f path_to_file```
 
 or compile for the speedup
 USAGE:
-```ghc -O2 ss.hs```
-```./ss -f path_to_file```
+```ghc -O2 ss.hs
+./ss -f path_to_file```
 
 
 
