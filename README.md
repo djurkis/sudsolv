@@ -3,16 +3,17 @@
 Solves a solvable sudoku or identifies an unsolvable one.
 
 without compilation you can do:
-# Usage: runhaskell ss.hs -f path_to_file
+# Usage: `runhaskell ss.hs -f path_to_file`
 
 or compile with ghc --make ss.hs
-# Usage ./ss -f path_to_file
+# Usage `./ss -f path_to_file`
 
 
 
 where the file expects following format for each puzzle
-
+(0 represents empty square)
 Grid 1
+`000000000
 000000000
 000000000
 000000000
@@ -20,10 +21,9 @@ Grid 1
 000000000
 000000000
 000000000
-000000000
-000000000
+000000000`
 Grid 2
-123456789
+`123456789
 000000000
 000000000
 000000000
@@ -31,7 +31,7 @@ Grid 2
 000000000
 000000000
 000000000
-000000000
+000000000`
 .
 .
 .
