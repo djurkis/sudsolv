@@ -15,7 +15,8 @@ USAGE:
 
 where the file expects following format for each puzzle
 (0 represents empty square)
-```Grid 1
+```
+Grid 1
 000000000
 000000000
 000000000
@@ -35,9 +36,10 @@ Grid 2
 000000000
 000000000
 000000000
+.
+.
+.
 ```
-.
-.
-.
+
 there are 2 example inputs, one is the files from project euler "p096_sudoku.txt"
 and unsolvable has 2 sudoku grids which are unsolvable.
