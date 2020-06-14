@@ -8,8 +8,11 @@ USAGE: ```unhaskell ss.hs -f path_to_file```
 
 or compile for the speedup
 USAGE:
-```ghc -O2 ss.hs
-./ss -f path_to_file```
+```
+ghc -O2 ss.hs
+./ss -f path_to_file
+
+```
 
 
 
