@@ -16,6 +16,11 @@ ghc -O2 ss.hs
 ./ss -f path_to_file
 ```
 
+or use stdin 
+```
+cat puzzles | ./ss -i
+```
+
 
 
 where the file expects following format for each puzzle
