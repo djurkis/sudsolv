@@ -1,12 +1,15 @@
 # sudsolv
 
 Solves a solvable sudoku or identifies an unsolvable one.
+Implemenets constraint propagation, until possible, then searches with a guess that has the least options.
 
-without compilation you can do:
+Run without compilation:
 # Usage: `runhaskell ss.hs -f path_to_file`
 
 or compile with ghc --make ss.hs
-# Usage `./ss -f path_to_file`
+# Usage 
+`ghc -O2 ss.hs`
+`./ss -f path_to_file`
 
 
 
