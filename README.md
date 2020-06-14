@@ -16,7 +16,7 @@ or compile with ghc --make ss.hs
 where the file expects following format for each puzzle
 (0 represents empty square)
 Grid 1
-`000000000
+```000000000
 000000000
 000000000
 000000000
@@ -24,7 +24,7 @@ Grid 1
 000000000
 000000000
 000000000
-000000000`
+000000000```
 Grid 2
 `123456789
 000000000
