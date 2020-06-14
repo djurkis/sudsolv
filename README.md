@@ -23,7 +23,7 @@ cat puzzles | ./ss -i
 
 
 
-where the file expects following format for each puzzle
+The file expects following format for each puzzle
 (0 represents empty square)
 ```
 Grid 1
